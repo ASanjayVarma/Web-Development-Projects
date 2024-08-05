@@ -4,12 +4,13 @@ Welcome to my personal portfolio website. This site showcases my skills, project
 
 ## About Me
 
-Hi, I'm Sanjay Varma. I have experience in C and Python, and I am currently learning machine learning and web. I also have a basic understanding of HTML and CSS, and I am a beginner in JavaScript.
+Hi, I'm Sanjay Varma. I have experience in C, Java & Python, and I am currently learning machine learning and web development. I also have a basic understanding of HTML and CSS, and I am a beginner in JavaScript.
 
 ## Skills
 
 - **C Programming**
 - **Python**
+- **Java**
 - **Machine Learning** (Learning)
 - **HTML** (Novice)
 - **CSS** (Novice)
