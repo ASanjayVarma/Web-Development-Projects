@@ -1,0 +1,46 @@
+
+/*
+cell sizes(text inside is also part of the cell)
+*/
+/*
+to make all the contents to be at the center of screen
+*/
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(15, 14, 14);
+    background-color: rgb(103, 103, 107);
+}
+
+/*properties of cells not the whole box. each individual cell*/
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;/*to make sure all lines are even pixels thick*/
+    line-height: 75px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#gameContainer{
+    font-family: "Permanent Marker", cursive;
+    text-align: center; /*so that x and o are at center of the box*/
+}
+
+/*full cells container properties*/
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+#restartBtn{
+    color: rgb(103, 103, 107);
+    font-family: "Permanent Marker", cursive;
+    background-color: black;
+    border-color: black;
+}
