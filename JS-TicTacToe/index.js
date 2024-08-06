@@ -26,6 +26,7 @@ let running = false;
 
 initializeGame();
 
+//function to initialize the game
 function initializeGame(){
     cells.forEach(cell => cell.addEventListener("click", cellClicked));
     restartBtn.addEventListener("click", restartGame);
@@ -33,6 +34,8 @@ function initializeGame(){
     running = true;
 }
 
+
+//checking condition for the cell which is clicked
 function cellClicked(){
     //this is the cell we are clicking on
     const cellIndex = this.getAttribute("cellIndex"); 
@@ -46,6 +49,7 @@ function cellClicked(){
     checkWinner();
 }
 
+//updating cell
 function updateCell(cell, index){
     options[index] = currentPlayer;
     cell.textContent = currentPlayer;
