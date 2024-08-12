@@ -22,7 +22,7 @@ let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 
 //track if game is running or not
-let running = false;
+let running = true;
 
 initializeGame();
 
@@ -44,7 +44,7 @@ function cellClicked(){
     if(options[cellIndex] != "" || !running){ 
         return;
     }
-
+    // this is basically the cell
     updateCell(this, cellIndex);
     checkWinner();
 }
@@ -68,8 +68,8 @@ function checkWinner(){
     for(let i = 0; i < winConditions.length;i++)
     {
         const condition = winConditions[i];
-        const cellA = options[condition[0]];
-        const cellB = options[condition[1]];
+        const cellA = options[condition[0]]; // 0 1 2
+        const cellB = options[condition[1]];// 3 4 5
         const cellC = options[condition[2]];
 
         if(cellA == "" ||cellB == "" ||cellC == "")
